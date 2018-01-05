@@ -1,5 +1,9 @@
-print("python test")
-a = "Hello World"
-b = "Hi World"
-print(a)
-print(b)
+import tensorflow as tf
+
+a = tf.placeholder('float')
+b = tf.placeholder('float')
+
+y = tf.mul(a, b)
+
+sess = tf.Session()
+
