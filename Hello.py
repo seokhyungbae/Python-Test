@@ -1,9 +1,5 @@
 import tensorflow as tf
-
-a = tf.placeholder('float')
-b = tf.placeholder('float')
-
-y = tf.mul(a, b)
-
+hello = tf.constant('Hello, TensorFlow!')
 sess = tf.Session()
+print(sess.run(hello))
 
